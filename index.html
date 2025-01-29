@@ -36,7 +36,6 @@
             transition-duration: 0.2s, 0.2s, 0.2s;
             transition-property: background, color, border;
             transition-timing-function: linear, linear, linear;
-            /* color: #e5ae49; */
             color: #222;
         }
 
@@ -46,8 +45,8 @@
 
         /*  */
 
-        .content:hover {
-            background-color: aqua;
+        .list_item:hover .image {
+            display: block !important;
         }
     </style>
 </head>
@@ -226,27 +225,16 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div style="width: 100%; background-color: red; border-bottom: 4px solid black; display: flex; justify-content: center;">
-            <nav style="width: 85%; height: auto; background-color: green;">
-                <ul
-                    style="padding-left: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; background-color: greenyellow;">
-                    <!-- <li style="width: 190px;" class="list_item">
-                        <a href="" style="position: relative;" class="">
-                            <img class="image" decoding="async" alt="" style="width: 100%; object-fit: cover;" src="images/bg1.jpg">
+        <div style="width: 100%; height: 170px; border-bottom: 4px solid black; display: flex; justify-content: center;">
+            <nav style="width: 85%; height: 100%;">
+                <ul style="padding-left: 0; width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: center;">
+                    <li style="width: 190px; height: 100%; position: relative; transition: all; transition-duration: 5s; transition-delay: 0s;"
+                        class="list_item">
+                        <a href="" style="" class="">
+                            <img class="image" decoding="async" alt="" style="opacity: 0.4; display: none; width: 100%; object-fit: cover;"
+                                src="images/bg1.jpg">
                             <div class="content"
-                                style="background-color: blue; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;">
-                                <i class="fa-solid fa-couch" style="font-size: 25px;"></i>
-                                <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">Living
-                                    Room
-                                </h5>
-                            </div>
-                        </a>
-                    </li> -->
-                    <li style="width: 190px; position: relative;" class="list_item">
-                        <a href="" style=" background-color: #e5ae49;" class="">
-                            <img class="image" decoding="async" alt="" style="width: 100%; object-fit: cover;" src="images/bg1.jpg">
-                            <div class="content"
-                                style="background-color: blue; position: absolute; top: 22%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
+                                style="position: absolute; top: 30%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
                                 <i class="fa-solid fa-couch" style="font-size: 25px;"></i>
                                 <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">Living
                                     Room
@@ -254,26 +242,69 @@
                             </div>
                         </a>
                     </li>
-                    <li style="width: 190px; position: relative;" class="list_item">
-                        <a href="" style=" background-color: #e5ae49;" class="">
-                            <img class="image" decoding="async" alt="" style="width: 100%; object-fit: cover;" src="images/bg2.jpg">
+                    <li style="width: 190px; height: 100%; position: relative; transition: all; transition-duration: 5s; transition-delay: 0s;"
+                        class="list_item">
+                        <a href="" style="" class="">
+                            <img class="image" decoding="async" alt="" style="opacity: 0.4; display: none; width: 100%; object-fit: cover;"
+                                src="images/bg2.jpg">
                             <div class="content"
-                                style="background-color: blue; position: absolute; top: 22%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
-                                <i class="fa-solid fa-couch" style="font-size: 25px;"></i>
-                                <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">Living
+                                style="position: absolute; top: 30%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
+                                <i class="fa-solid fa-tv" style="font-size: 25px;"></i>
+                                <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">Dining
                                     Room
                                 </h5>
                             </div>
                         </a>
                     </li>
-                    <li style="width: 190px; position: relative;" class="list_item">
-                        <a href="" style=" background-color: #e5ae49;" class="">
-                            <img class="image" decoding="async" alt="" style="width: 100%; object-fit: cover;" src="images/bg3.jpg">
+                    <li style="width: 190px; height: 100%; position: relative; transition: all; transition-duration: 5s; transition-delay: 0s;"
+                        class="list_item">
+                        <a href="" style="" class="">
+                            <img class="image" decoding="async" alt="" style="opacity: 0.4; display: none; width: 100%; object-fit: cover;"
+                                src="images/bg3.jpg">
                             <div class="content"
-                                style="background-color: blue; position: absolute; top: 22%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
-                                <i class="fa-solid fa-couch" style="font-size: 25px;"></i>
-                                <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">Living
-                                    Room
+                                style="position: absolute; top: 30%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
+                                <i class="fa-solid fa-bed" style="font-size: 25px;"></i>
+                                <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">Bedroom
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="width: 190px; height: 100%; position: relative; transition: all; transition-duration: 5s; transition-delay: 0s;"
+                        class="list_item">
+                        <a href="" style="" class="">
+                            <img class="image" decoding="async" alt="" style="opacity: 0.4; display: none; width: 100%; object-fit: cover;"
+                                src="images/bg4.png">
+                            <div class="content"
+                                style="position: absolute; top: 30%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
+                                <i class="fa-solid fa-bath" style="font-size: 25px;"></i>
+                                <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">
+                                    Bathroom</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="width: 190px; height: 100%; position: relative; transition: all; transition-duration: 5s; transition-delay: 0s;"
+                        class="list_item">
+                        <a href="" style="" class="">
+                            <img class="image" decoding="async" alt="" style="opacity: 0.4; display: none; width: 100%; object-fit: cover;"
+                                src="images/bg5.jpg">
+                            <div class="content"
+                                style="position: absolute; top: 30%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
+                                <i class="fa-solid fa-building" style="font-size: 25px;"></i>
+                                <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">Office
+                                </h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="width: 190px; height: 100%; position: relative; transition: all; transition-duration: 5s; transition-delay: 0s;"
+                        class="list_item">
+                        <a href="" style="" class="">
+                            <img class="image" decoding="async" alt="" style="opacity: 0.4; display: none; width: 100%; object-fit: cover;"
+                                src="images/bg6.jpg">
+                            <div class="content"
+                                style="position: absolute; top: 30%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 22px;">
+                                <i class="fa-solid fa-door-open" style="font-size: 25px;"></i>
+                                <h5 class="" style="font-family: Ubuntu; font-size: 14px; line-height: 14,5px; font-weight: 300; color: #222;">
+                                    Exterior
                                 </h5>
                             </div>
                         </a>
