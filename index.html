@@ -48,6 +48,72 @@
     .list_item:hover .image {
       display: block !important;
     }
+
+    /*  */
+    /**
+ * Tabs
+ */
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .tabs label {
+      border-radius: 25px;
+      order: 1;
+      display: block;
+      padding: 10px 30px;
+      /* margin: 0 5px; */
+      text-align: center;
+      cursor: pointer;
+      background: transparent;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+      font-family: Montserrat, sans-serif;
+      line-height: 18.5714px;
+      font-weight: 400;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 35px;
+    }
+
+    .tabs .tab {
+      order: 99;
+      flex-grow: 1;
+      width: 100%;
+      display: none;
+      padding: 1rem;
+      background: red;
+    }
+
+    .tabs input[type="radio"] {
+      display: none;
+    }
+
+    .tabs input[type="radio"]:checked+label {
+      background: #e5ae49;
+      color: #fff;
+    }
+
+    .tabs input[type="radio"]:checked+label+.tab {
+      display: block;
+    }
+
+    @media (max-width: 45em) {
+
+      .tabs .tab,
+      .tabs label {
+        order: initial;
+      }
+
+      .tabs label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0.2rem;
+      }
+    }
   </style>
 </head>
 
@@ -996,6 +1062,145 @@
         </div>
         <div class="" style="width: 30%">
           <img src="images/chooseusbg.png" alt="Why choose us" style="width: 100%; height: 100%; object-fit: cover" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Works -->
+
+    <div style="width: 100%; background-color: #F9F9F9; padding-top: 70px; padding-bottom: 45px;">
+      <div style="margin-bottom: 35px;">
+        <h5
+          style="text-align: center; text-transform: uppercase; color: #222; font-size: 34px; font-family: Montserrat, sans-serif; font-weight: 700; line-height: 45px; letter-spacing: 0.5px; margin-bottom: 15px;">
+          <span style="color: #e5ae49;">featured</span> works
+        </h5>
+        <p
+          style="padding: 0 320px; color: #666; font-family: Ubuntu, sans-serif; font-size: 14px; font-weight: 300; text-align: center;margin-bottom: 10px;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam
+        </p>
+      </div>
+      <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">show all</label>
+        <div class="tab" style="width: 100%; position: relative; overflow: hidden; height: 760px;">
+          <div class="" style="width: 25%; position: absolute; left: 0px; top: 0px; z-index: 10; transform: translate3d(0px, 0px, 0px);">
+            <div class="" style="width: 100%; height: 380px;">
+              <img decoding="async" style="width: 100%; object-fit: cover;"
+                src="https://interiart.templaza.net/wp-content/uploads/2015/09/portfolio-768x1024.jpg" class="" alt="">
+            </div>
+            <div class="">
+              <h3><a class="" href="https://interiart.templaza.net/portfolio/bridge-street-residence-2/" data-effect="mfp-zoom-in">Bridge
+                  Street Residence</a></h3> <span class=""> <a href="https://interiart.templaza.net/portfolio-category/bathrooms/"
+                  rel="tag">Bathrooms</a>,<a href="https://interiart.templaza.net/portfolio-category/bedrooms/" rel="tag">Bedrooms</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/kitchens/" rel="tag">Kitchens</a> </span>
+            </div>
+          </div>
+          <div class=""
+            style="width: 25%; position: absolute; left: 0px; top: 0px; transform: translate3d(359px, 0px, 0px) scale3d(1, 1, 1); opacity: 1;">
+            <div class="" style="">
+              <img decoding="async" style="width: 100%; object-fit: cover;"
+                src="https://interiart.templaza.net/wp-content/uploads/2015/09/d8a94731088097.5640da4521583-768x1024.jpg" class="" alt="">
+            </div>
+            <div class="">
+              <h3><a class="" href="https://interiart.templaza.net/portfolio/woodland-road-west/" data-effect="mfp-zoom-in">Woodland Road
+                  West</a></h3> <span class=""> <a href="https://interiart.templaza.net/portfolio-category/bedrooms/" rel="tag">Bedrooms</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/kitchens/" rel="tag">Kitchens</a> </span>
+            </div>
+          </div>
+          <div class=""
+            style="width: 50%; position: absolute; left: 0px; top: 0px; transform: translate3d(718px, 0px, 0px) scale3d(1, 1, 1); opacity: 1;">
+            <div class="" style="">
+              <img decoding="async" style="width: 100%; object-fit: cover;"
+                src="https://interiart.templaza.net/wp-content/uploads/2015/08/64384c17547151.562bb72f0af5b.jpg" class="" alt="">
+            </div>
+            <div class="">
+              <h3><a class="" href="https://interiart.templaza.net/portfolio/bridge-street-residence/" data-effect="mfp-zoom-in">Bridge Street
+                  Residence</a></h3> <span class=""> <a href="https://interiart.templaza.net/portfolio-category/kitchens/" rel="tag">Kitchens</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/living-room/" rel="tag">living room</a>
+              </span>
+            </div>
+          </div>
+          <div class=""
+            style="width: 25%; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 380px, 0px) scale3d(1, 1, 1); opacity: 1;">
+            <div class="" style="">
+              <img decoding="async" style="width: 100%; object-fit: cover;"
+                src="https://interiart.templaza.net/wp-content/uploads/2015/08/b9164317547151.562bb5c58cd39.jpg" class="" alt="">
+            </div>
+            <div class="">
+              <h3><a class="" href="https://interiart.templaza.net/portfolio/shadywood-road-residence/" data-effect="mfp-zoom-in">Shadywood Road
+                  Residence</a></h3> <span class=""> <a href="https://interiart.templaza.net/portfolio-category/bedrooms/" rel="tag">Bedrooms</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/kitchens/" rel="tag">Kitchens</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/living-room/" rel="tag">living room</a> </span>
+            </div>
+          </div>
+          <div class=""
+            style="width: 25%; position: absolute; left: 0px; top: 0px; transform: translate3d(359px, 380px, 0px) scale3d(1, 1, 1); opacity: 1;">
+            <div class="" style="">
+              <img decoding="async" style="width: 100%; object-fit: cover;"
+                src="https://interiart.templaza.net/wp-content/uploads/2015/07/f55ff328777967.55d21854df0fa-819x1024.jpg" class="" alt="">
+            </div>
+            <div class="">
+              <h3><a class="" href="https://interiart.templaza.net/portfolio/woodlawn-blvd/" data-effect="mfp-zoom-in">Woodlawn Blvd</a></h3>
+              <span class=""> <a href="https://interiart.templaza.net/portfolio-category/bedrooms/" rel="tag">Bedrooms</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/kitchens/" rel="tag">Kitchens</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/offices/" rel="tag">Offices</a> </span>
+            </div>
+          </div>
+          <div class=""
+            style="width: 25%; position: absolute; left: 0px; top: 0px; transform: translate3d(718px, 380px, 0px) scale3d(1, 1, 1); opacity: 1;">
+            <div class="" style="">
+              <img decoding="async" style="width: 100%; object-fit: cover;"
+                src="https://interiart.templaza.net/wp-content/uploads/2015/07/16046392691_83a8aac479_o1-1024x681.jpg" class="" alt="">
+            </div>
+            <div class="">
+              <h3><a class="" href="https://interiart.templaza.net/portfolio/new-french-country/" data-effect="mfp-zoom-in">New French
+                  Country</a></h3> <span class=""> <a href="https://interiart.templaza.net/portfolio-category/bathrooms/" rel="tag">Bathrooms</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/kitchens/" rel="tag">Kitchens</a> </span>
+            </div>
+          </div>
+          <div class=""
+            style="width: 25%; position: absolute; left: 0px; top: 0px; transform: translate3d(1077px, 380px, 0px) scale3d(1, 1, 1); opacity: 1;">
+            <div class="" style="">
+              <img decoding="async" style="width: 100%; object-fit: cover;"
+                src="https://interiart.templaza.net/wp-content/uploads/2015/07/6734902133_42bd00fa52_o1.jpg" class="" alt="">
+            </div>
+            <div class="">
+              <h3><a class="" href="https://interiart.templaza.net/portfolio/drexel-avenue-residence/" data-effect="mfp-zoom-in">Drexel Avenue
+                  Residence</a></h3> <span class=""> <a href="https://interiart.templaza.net/portfolio-category/kitchens/" rel="tag">Kitchens</a>,<a
+                  href="https://interiart.templaza.net/portfolio-category/offices/" rel="tag">Offices</a> </span>
+            </div>
+          </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">bathrooms</label>
+        <div class="tab">
+          <h1>Bathrooms Content</h1>
+        </div>
+
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree">bedrooms</label>
+        <div class="tab">
+          <h1>Bedrooms Content</h1>
+        </div>
+
+        <input type="radio" name="tabs" id="tabfour">
+        <label for="tabfour">kitchens</label>
+        <div class="tab">
+          <h1>Kitchens Content</h1>
+        </div>
+
+        <input type="radio" name="tabs" id="tabfive">
+        <label for="tabfive">living room</label>
+        <div class="tab">
+          <h1>Living Room Content</h1>
+        </div>
+
+        <input type="radio" name="tabs" id="tabsix">
+        <label for="tabsix">offices</label>
+        <div class="tab">
+          <h1>Offices Content</h1>
         </div>
       </div>
     </div>
