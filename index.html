@@ -1,76 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InteriArt</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InteriArt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-      a {
-        text-decoration: none;
-        font-size: 13px;
-        font-family: "Montserrat", sans-serif;
-        transition-behavior: normal, normal, normal;
-        transition-delay: 0s, 0s, 0s;
-        transition-duration: 0.2s, 0.2s, 0.2s;
-        transition-property: background, color, border;
-        transition-timing-function: linear, linear, linear;
-        color: #222;
-      }
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-      li {
-        list-style-type: none;
-      }
+    a {
+      text-decoration: none;
+      font-size: 13px;
+      font-family: "Montserrat", sans-serif;
+      transition-behavior: normal, normal, normal;
+      transition-delay: 0s, 0s, 0s;
+      transition-duration: 0.2s, 0.2s, 0.2s;
+      transition-property: background, color, border;
+      transition-timing-function: linear, linear, linear;
+      color: #222;
+    }
 
-      /*  */
+    li {
+      list-style-type: none;
+    }
 
-      .list_item:hover .image {
-        display: block !important;
-      }
-    </style>
-  </head>
+    /*  */
 
-  <body>
-    <header
-      class=""
-      style="
+    .list_item:hover .image {
+      display: block !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="" style="
         position: fixed;
         top: 0;
         z-index: 1000;
@@ -81,25 +63,17 @@
         justify-content: space-between;
         align-items: center;
         padding-left: 40px;
-      "
-    >
-      <a href="#" class="text-decoration:none">
-        <img src="images/Interiart4.png" alt="Logo" />
-      </a>
-      <div style="display: flex; height: 100%">
-        <nav class="" style="line-height: 20px; color: #333">
-          <div class="" style="height: 100%">
-            <ul class="" style="display: flex; height: 100%">
-              <li
-                class="cursor-pointer"
-                style="border-top: 2px solid #e5ae49"
-                onmouseover="this.style.backgroundColor='#F9F9F9';"
-                onmouseout="this.style.backgroundColor='initial';"
-              >
-                <a
-                  class=""
-                  href=""
-                  style="
+      ">
+    <a href="#" class="text-decoration:none">
+      <img src="images/Interiart4.png" alt="Logo" />
+    </a>
+    <div style="display: flex; height: 100%">
+      <nav class="" style="line-height: 20px; color: #333">
+        <div class="" style="height: 100%">
+          <ul class="" style="display: flex; height: 100%">
+            <li class="cursor-pointer" style="border-top: 2px solid #e5ae49" onmouseover="this.style.backgroundColor='#F9F9F9';"
+              onmouseout="this.style.backgroundColor='initial';">
+              <a class="" href="" style="
                     color: #e5ae49;
                     width: 90px;
                     height: 100%;
@@ -107,105 +81,69 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                  "
-                  >Home<span class=""></span
-                ></a>
-              </li>
-              <li class="" style="">
-                <a
-                  class=""
-                  href="#"
-                  style="
+                  ">Home<span class=""></span></a>
+            </li>
+            <li class="" style="">
+              <a class="" href="#" style="
                     width: 90px;
                     height: 100%;
                     text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                  "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
-                  >Company<span class=""></span
-                ></a>
-              </li>
-              <li class="" style="">
-                <a
-                  class=""
-                  href=""
-                  style="
+                  " onmouseover="this.style.backgroundColor='#F9F9F9';" onmouseout="this.style.backgroundColor='initial';">Company<span
+                  class=""></span></a>
+            </li>
+            <li class="" style="">
+              <a class="" href="" style="
                     width: 90px;
                     height: 100%;
                     text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                  "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
-                  >Blogs<span class=""></span>
-                </a>
-              </li>
-              <li class="" style="">
-                <a
-                  class=""
-                  href=""
-                  style="
+                  " onmouseover="this.style.backgroundColor='#F9F9F9';" onmouseout="this.style.backgroundColor='initial';">Blogs<span
+                  class=""></span>
+              </a>
+            </li>
+            <li class="" style="">
+              <a class="" href="" style="
                     width: 90px;
                     height: 100%;
                     text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                  "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
-                  >Projects<span class=""></span
-                ></a>
-              </li>
-              <li class="" style="">
-                <a
-                  class=""
-                  href=""
-                  style="
+                  " onmouseover="this.style.backgroundColor='#F9F9F9';" onmouseout="this.style.backgroundColor='initial';">Projects<span
+                  class=""></span></a>
+            </li>
+            <li class="" style="">
+              <a class="" href="" style="
                     width: 100px;
                     height: 100%;
                     text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                  "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
-                  >Shop<span class=""></span
-                ></a>
-              </li>
-              <li class="" style="">
-                <a
-                  class=""
-                  href="#"
-                  style="
+                  " onmouseover="this.style.backgroundColor='#F9F9F9';" onmouseout="this.style.backgroundColor='initial';">Shop<span
+                  class=""></span></a>
+            </li>
+            <li class="" style="">
+              <a class="" href="#" style="
                     width: 100px;
                     height: 100%;
                     text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                  "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
-                  >Page<span class=""></span
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <a
-          class=""
-          style="width: 90px; height: 100%; border-left: 1px solid #efefef"
-        >
-          <i
-            class="bi bi-search"
-            style="
+                  " onmouseover="this.style.backgroundColor='#F9F9F9';" onmouseout="this.style.backgroundColor='initial';">Page<span
+                  class=""></span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="" style="width: 90px; height: 100%; border-left: 1px solid #efefef">
+        <i class="bi bi-search" style="
               cursor: pointer;
               display: flex;
               justify-content: center;
@@ -214,14 +152,9 @@
               font-size: 24px;
               width: 100%;
               height: 100%;
-            "
-            onmouseover="this.style.color='#e5ae49';"
-            onmouseout="this.style.color='#C2C2C2';"
-          ></i>
-        </a>
-        <div
-          class=""
-          style="
+            " onmouseover="this.style.color='#e5ae49';" onmouseout="this.style.color='#C2C2C2';"></i>
+      </a>
+      <div class="" style="
             display: flex;
             justify-content: center;
             align-items: center;
@@ -229,11 +162,8 @@
             width: 90px;
             height: 100%;
             border-left: 1px solid #efefef;
-          "
-        >
-          <i
-            class="bi bi-cart3"
-            style="
+          ">
+        <i class="bi bi-cart3" style="
               cursor: pointer;
               display: flex;
               justify-content: center;
@@ -242,12 +172,8 @@
               font-size: 24px;
               width: 100%;
               height: 100%;
-            "
-            onmouseover="this.style.color='#e5ae49';"
-            onmouseout="this.style.color='#C2C2C2';"
-          ></i>
-          <p
-            style="
+            " onmouseover="this.style.color='#e5ae49';" onmouseout="this.style.color='#C2C2C2';"></i>
+        <p style="
               position: absolute;
               left: 50%;
               background-color: #e5ae49;
@@ -259,585 +185,419 @@
               display: flex;
               align-items: center;
               justify-content: center;
-            "
-          >
-            0
-          </p>
+            ">
+          0
+        </p>
+      </div>
+    </div>
+  </header>
+  <main style="width: 100%; height: 150vh">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 100%; height: 100%">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"
+          style="
+              width: 12px;
+              height: 12px;
+              line-height: 20px;
+              border: 3px solid #e5e5e5;
+              background-position-x: 0%;
+              background-position-y: 0%;
+              border-radius: 50%;
+              background-image: linear-gradient(
+                rgb(153, 153, 153) 0%,
+                rgb(225, 225, 225) 100%
+              );
+              background-color: transparent;
+            "></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" style="
+              width: 12px;
+              height: 12px;
+              line-height: 20px;
+              border: 3px solid #e5e5e5;
+              background-position-x: 0%;
+              background-position-y: 0%;
+              border-radius: 50%;
+              background-image: linear-gradient(
+                rgb(153, 153, 153) 0%,
+                rgb(225, 225, 225) 100%
+              );
+              background-color: transparent;
+            "></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" style="
+              width: 12px;
+              height: 12px;
+              line-height: 20px;
+              border: 3px solid #e5e5e5;
+              background-position-x: 0%;
+              background-position-y: 0%;
+              border-radius: 50%;
+              background-image: linear-gradient(
+                rgb(153, 153, 153) 0%,
+                rgb(225, 225, 225) 100%
+              );
+              background-color: transparent;
+            "></button>
+      </div>
+      <div class="carousel-inner" style="width: 100%; height: 100%">
+        <div class="carousel-item active position-relative w-100 h-100">
+          <img src="images/slide1.jpg" class="d-block w-100 h-100" alt="" style="object-fit: cover" />
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <div class="carousel-caption d-none d-md-flex flex-column h-100 align-items-center justify-content-center" style="font-family: Ubuntu">
+            <h5 class="text-uppercase" style="
+                  line-height: 80px;
+                  color: #fff;
+                  font-size: 48px;
+                  font-weight: 400;
+                  letter-spacing: 2px;
+                ">
+              we’re interiart wordpress theme
+            </h5>
+            <div style="
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  width: 70%;
+                ">
+              <div class="" style="
+                    display: block;
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 8;
+                      background-color: rgb(255, 255, 255);
+                      color: rgb(255, 255, 255);
+                      width: 300px;
+                      height: 1px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                      visibility: visible;
+                    "></div>
+              </div>
+              <div class="" style="
+                    display: block;
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 7;
+                      color: rgb(255, 255, 255);
+                      width: 15px;
+                      height: 15px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      overflow: hidden;
+                      border-color: rgb(229, 174, 73);
+                      border-style: solid;
+                      border-width: 3px;
+                      border-radius: 7px;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: visible;
+                    "></div>
+              </div>
+              <div class="" style="
+                    display: block;
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 8;
+                      background-color: rgb(255, 255, 255);
+                      color: rgb(255, 255, 255);
+                      width: 300px;
+                      height: 1px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                      visibility: visible;
+                    "></div>
+              </div>
+            </div>
+            <p class="text-uppercase" style="
+                  color: #fff;
+                  font-size: 50px;
+                  font-weight: 700;
+                  letter-spacing: 2px;
+                ">
+              furniture & interior design
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item position-relative w-100 h-100">
+          <img src="images/slide2.jpg" class="d-block w-100 h-100" alt="" style="width: 100%; height: 100%; object-fit: cover" />
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <div class="carousel-caption d-none d-md-flex flex-column h-100 align-items-center justify-content-center" style="font-family: Ubuntu">
+            <h5 class="text-uppercase" style="
+                  line-height: 80px;
+                  color: #fff;
+                  font-size: 48px;
+                  font-weight: 400;
+                  letter-spacing: 2px;
+                ">
+              we’re winning awards
+            </h5>
+            <div style="
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  width: 70%;
+                ">
+              <div class="" style="
+                    display: block;
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 8;
+                      background-color: rgb(255, 255, 255);
+                      color: rgb(255, 255, 255);
+                      width: 300px;
+                      height: 1px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                      visibility: visible;
+                    "></div>
+              </div>
+              <div class="" style="
+                    display: block;
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 7;
+                      color: rgb(255, 255, 255);
+                      width: 15px;
+                      height: 15px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      overflow: hidden;
+                      border-color: rgb(229, 174, 73);
+                      border-style: solid;
+                      border-width: 3px;
+                      border-radius: 7px;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: visible;
+                    "></div>
+              </div>
+              <div class="" style="
+                    display: block;
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 8;
+                      background-color: rgb(255, 255, 255);
+                      color: rgb(255, 255, 255);
+                      width: 300px;
+                      height: 1px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                      visibility: visible;
+                    "></div>
+              </div>
+            </div>
+            <p class="text-uppercase" style="
+                  color: #fff;
+                  font-size: 50px;
+                  font-weight: 700;
+                  letter-spacing: 2px;
+                ">
+              architecture studio
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item w-100 position-relative h-100">
+          <img src="images/slide3.jpg" class="d-block w-100 h-100" alt="" style="object-fit: cover" />
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <div class="carousel-caption d-none d-md-flex flex-column h-100 align-items-center justify-content-center" style="font-family: Ubuntu">
+            <h5 class="text-uppercase" style="
+                  line-height: 80px;
+                  color: #fff;
+                  font-size: 48px;
+                  font-weight: 400;
+                  letter-spacing: 2px;
+                ">
+              creative interior design
+            </h5>
+            <div style="
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  width: 70%;
+                ">
+              <div class="" style="
+                    display: block;
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 8;
+                      background-color: rgb(255, 255, 255);
+                      color: rgb(255, 255, 255);
+                      width: 300px;
+                      height: 1px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                      visibility: visible;
+                    "></div>
+              </div>
+              <div class="d-block" style="
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 7;
+                      color: rgb(255, 255, 255);
+                      width: 15px;
+                      height: 15px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      overflow: hidden;
+                      border-color: rgb(229, 174, 73);
+                      border-style: solid;
+                      border-width: 3px;
+                      border-radius: 7px;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: visible;
+                    "></div>
+              </div>
+              <div class="" style="
+                    display: block;
+                    pointer-events: auto;
+                    visibility: visible;
+                    perspective: 601px;
+                  ">
+                <div class="" style="
+                      z-index: 8;
+                      background-color: rgb(255, 255, 255);
+                      color: rgb(255, 255, 255);
+                      width: 300px;
+                      height: 1px;
+                      min-height: 0px;
+                      min-width: 0px;
+                      max-height: none;
+                      max-width: none;
+                      backdrop-filter: none;
+                      filter: none;
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                      visibility: visible;
+                    "></div>
+              </div>
+            </div>
+            <p class="text-uppercase" style="
+                  color: #fff;
+                  font-size: 50px;
+                  font-weight: 700;
+                  letter-spacing: 2px;
+                ">
+              architecture studio
+            </p>
+          </div>
         </div>
       </div>
-    </header>
-    <main style="width: 100%; height: 150vh">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-        style="width: 100%; height: 100%"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-            style="
-              width: 12px;
-              height: 12px;
-              line-height: 20px;
-              border: 3px solid #e5e5e5;
-              background-position-x: 0%;
-              background-position-y: 0%;
-              border-radius: 50%;
-              background-image: linear-gradient(
-                rgb(153, 153, 153) 0%,
-                rgb(225, 225, 225) 100%
-              );
-              background-color: transparent;
-            "
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-            style="
-              width: 12px;
-              height: 12px;
-              line-height: 20px;
-              border: 3px solid #e5e5e5;
-              background-position-x: 0%;
-              background-position-y: 0%;
-              border-radius: 50%;
-              background-image: linear-gradient(
-                rgb(153, 153, 153) 0%,
-                rgb(225, 225, 225) 100%
-              );
-              background-color: transparent;
-            "
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-            style="
-              width: 12px;
-              height: 12px;
-              line-height: 20px;
-              border: 3px solid #e5e5e5;
-              background-position-x: 0%;
-              background-position-y: 0%;
-              border-radius: 50%;
-              background-image: linear-gradient(
-                rgb(153, 153, 153) 0%,
-                rgb(225, 225, 225) 100%
-              );
-              background-color: transparent;
-            "
-          ></button>
-        </div>
-        <div class="carousel-inner" style="width: 100%; height: 100%">
-          <div class="carousel-item active position-relative w-100 h-100">
-            <img
-              src="images/slide1.jpg"
-              class="d-block w-100 h-100"
-              alt=""
-              style="object-fit: cover"
-            />
-            <div
-              class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
-            ></div>
-            <div
-              class="carousel-caption d-none d-md-flex flex-column h-100 align-items-center justify-content-center"
-              style="font-family: Ubuntu"
-            >
-              <h5
-                class="text-uppercase"
-                style="
-                  line-height: 80px;
-                  color: #fff;
-                  font-size: 48px;
-                  font-weight: 400;
-                  letter-spacing: 2px;
-                "
-              >
-                we’re interiart wordpress theme
-              </h5>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-around;
-                  align-items: center;
-                  width: 70%;
-                "
-              >
-                <div
-                  class=""
-                  style="
-                    display: block;
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 8;
-                      background-color: rgb(255, 255, 255);
-                      color: rgb(255, 255, 255);
-                      width: 300px;
-                      height: 1px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      opacity: 1;
-                      transform: translate(0px, 0px);
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-                <div
-                  class=""
-                  style="
-                    display: block;
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 7;
-                      color: rgb(255, 255, 255);
-                      width: 15px;
-                      height: 15px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      overflow: hidden;
-                      border-color: rgb(229, 174, 73);
-                      border-style: solid;
-                      border-width: 3px;
-                      border-radius: 7px;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      transform: translate(0px, 0px);
-                      opacity: 1;
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-                <div
-                  class=""
-                  style="
-                    display: block;
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 8;
-                      background-color: rgb(255, 255, 255);
-                      color: rgb(255, 255, 255);
-                      width: 300px;
-                      height: 1px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      opacity: 1;
-                      transform: translate(0px, 0px);
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-              </div>
-              <p
-                class="text-uppercase"
-                style="
-                  color: #fff;
-                  font-size: 50px;
-                  font-weight: 700;
-                  letter-spacing: 2px;
-                "
-              >
-                furniture & interior design
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item position-relative w-100 h-100">
-            <img
-              src="images/slide2.jpg"
-              class="d-block w-100 h-100"
-              alt=""
-              style="width: 100%; height: 100%; object-fit: cover"
-            />
-            <div
-              class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
-            ></div>
-            <div
-              class="carousel-caption d-none d-md-flex flex-column h-100 align-items-center justify-content-center"
-              style="font-family: Ubuntu"
-            >
-              <h5
-                class="text-uppercase"
-                style="
-                  line-height: 80px;
-                  color: #fff;
-                  font-size: 48px;
-                  font-weight: 400;
-                  letter-spacing: 2px;
-                "
-              >
-                we’re winning awards
-              </h5>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-around;
-                  align-items: center;
-                  width: 70%;
-                "
-              >
-                <div
-                  class=""
-                  style="
-                    display: block;
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 8;
-                      background-color: rgb(255, 255, 255);
-                      color: rgb(255, 255, 255);
-                      width: 300px;
-                      height: 1px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      opacity: 1;
-                      transform: translate(0px, 0px);
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-                <div
-                  class=""
-                  style="
-                    display: block;
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 7;
-                      color: rgb(255, 255, 255);
-                      width: 15px;
-                      height: 15px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      overflow: hidden;
-                      border-color: rgb(229, 174, 73);
-                      border-style: solid;
-                      border-width: 3px;
-                      border-radius: 7px;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      transform: translate(0px, 0px);
-                      opacity: 1;
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-                <div
-                  class=""
-                  style="
-                    display: block;
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 8;
-                      background-color: rgb(255, 255, 255);
-                      color: rgb(255, 255, 255);
-                      width: 300px;
-                      height: 1px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      opacity: 1;
-                      transform: translate(0px, 0px);
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-              </div>
-              <p
-                class="text-uppercase"
-                style="
-                  color: #fff;
-                  font-size: 50px;
-                  font-weight: 700;
-                  letter-spacing: 2px;
-                "
-              >
-                architecture studio
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item w-100 position-relative h-100">
-            <img
-              src="images/slide3.jpg"
-              class="d-block w-100 h-100"
-              alt=""
-              style="object-fit: cover"
-            />
-            <div
-              class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
-            ></div>
-            <div
-              class="carousel-caption d-none d-md-flex flex-column h-100 align-items-center justify-content-center"
-              style="font-family: Ubuntu"
-            >
-              <h5
-                class="text-uppercase"
-                style="
-                  line-height: 80px;
-                  color: #fff;
-                  font-size: 48px;
-                  font-weight: 400;
-                  letter-spacing: 2px;
-                "
-              >
-                creative interior design
-              </h5>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-around;
-                  align-items: center;
-                  width: 70%;
-                "
-              >
-                <div
-                  class=""
-                  style="
-                    display: block;
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 8;
-                      background-color: rgb(255, 255, 255);
-                      color: rgb(255, 255, 255);
-                      width: 300px;
-                      height: 1px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      opacity: 1;
-                      transform: translate(0px, 0px);
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-                <div
-                  class="d-block"
-                  style="
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 7;
-                      color: rgb(255, 255, 255);
-                      width: 15px;
-                      height: 15px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      overflow: hidden;
-                      border-color: rgb(229, 174, 73);
-                      border-style: solid;
-                      border-width: 3px;
-                      border-radius: 7px;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      transform: translate(0px, 0px);
-                      opacity: 1;
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-                <div
-                  class=""
-                  style="
-                    display: block;
-                    pointer-events: auto;
-                    visibility: visible;
-                    perspective: 601px;
-                  "
-                >
-                  <div
-                    class=""
-                    style="
-                      z-index: 8;
-                      background-color: rgb(255, 255, 255);
-                      color: rgb(255, 255, 255);
-                      width: 300px;
-                      height: 1px;
-                      min-height: 0px;
-                      min-width: 0px;
-                      max-height: none;
-                      max-width: none;
-                      backdrop-filter: none;
-                      filter: none;
-                      transform-origin: 50% 50%;
-                      opacity: 1;
-                      transform: translate(0px, 0px);
-                      visibility: visible;
-                    "
-                  ></div>
-                </div>
-              </div>
-              <p
-                class="text-uppercase"
-                style="
-                  color: #fff;
-                  font-size: 50px;
-                  font-weight: 700;
-                  letter-spacing: 2px;
-                "
-              >
-                architecture studio
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon"
-            aria-hidden="true"
-            style="display: inline-block; width: 45px; height: 45px"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon"
-            aria-hidden="true"
-            style="display: inline-block; width: 45px; height: 45px"
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div
-        style="
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="display: inline-block; width: 45px; height: 45px"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="display: inline-block; width: 45px; height: 45px"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div style="
           width: 100%;
           height: 170px;
           border-bottom: 4px solid black;
           display: flex;
           justify-content: center;
-        "
-      >
-        <nav style="width: 85%; height: 100%">
-          <ul
-            style="
+        ">
+      <nav style="width: 85%; height: 100%">
+        <ul style="
               padding-left: 0;
               width: 100%;
               height: 100%;
               display: flex;
               justify-content: space-between;
               align-items: center;
-            "
-          >
-            <li
-              style="
+            ">
+          <li style="
                 width: 190px;
                 height: 100%;
                 position: relative;
                 transition: all;
                 transition-duration: 5s;
                 transition-delay: 0s;
-              "
-              class="list_item"
-            >
-              <a href="" style="" class="">
-                <img
-                  class="image"
-                  decoding="async"
-                  alt=""
-                  style="
+              " class="list_item">
+            <a href="" style="" class="">
+              <img class="image" decoding="async" alt="" style="
                     opacity: 0.4;
                     display: none;
                     width: 100%;
                     object-fit: cover;
-                  "
-                  src="images/bg1.jpg"
-                />
-                <div
-                  class=""
-                  style="
+                  " src="images/bg1.jpg" />
+              <div class="" style="
                     position: absolute;
                     top: 30%;
                     width: 100%;
@@ -846,51 +606,36 @@
                     justify-content: center;
                     align-items: center;
                     gap: 22px;
-                  "
-                >
-                  <i class="fa-solid fa-couch" style="font-size: 25px"></i>
-                  <h5
-                    class=""
-                    style="
+                  ">
+                <i class="fa-solid fa-couch" style="font-size: 25px"></i>
+                <h5 class="" style="
                       font-family: Ubuntu;
                       font-size: 14px;
                       line-height: 14, 5px;
                       font-weight: 300;
                       color: #222;
-                    "
-                  >
-                    Living Room
-                  </h5>
-                </div>
-              </a>
-            </li>
-            <li
-              style="
+                    ">
+                  Living Room
+                </h5>
+              </div>
+            </a>
+          </li>
+          <li style="
                 width: 190px;
                 height: 100%;
                 position: relative;
                 transition: all;
                 transition-duration: 5s;
                 transition-delay: 0s;
-              "
-              class="list_item"
-            >
-              <a href="" style="" class="">
-                <img
-                  class="image"
-                  decoding="async"
-                  alt=""
-                  style="
+              " class="list_item">
+            <a href="" style="" class="">
+              <img class="image" decoding="async" alt="" style="
                     opacity: 0.4;
                     display: none;
                     width: 100%;
                     object-fit: cover;
-                  "
-                  src="images/bg2.jpg"
-                />
-                <div
-                  class=""
-                  style="
+                  " src="images/bg2.jpg" />
+              <div class="" style="
                     position: absolute;
                     top: 30%;
                     width: 100%;
@@ -899,51 +644,36 @@
                     justify-content: center;
                     align-items: center;
                     gap: 22px;
-                  "
-                >
-                  <i class="fa-solid fa-tv" style="font-size: 25px"></i>
-                  <h5
-                    class=""
-                    style="
+                  ">
+                <i class="fa-solid fa-tv" style="font-size: 25px"></i>
+                <h5 class="" style="
                       font-family: Ubuntu;
                       font-size: 14px;
                       line-height: 14, 5px;
                       font-weight: 300;
                       color: #222;
-                    "
-                  >
-                    Dining Room
-                  </h5>
-                </div>
-              </a>
-            </li>
-            <li
-              style="
+                    ">
+                  Dining Room
+                </h5>
+              </div>
+            </a>
+          </li>
+          <li style="
                 width: 190px;
                 height: 100%;
                 position: relative;
                 transition: all;
                 transition-duration: 5s;
                 transition-delay: 0s;
-              "
-              class="list_item"
-            >
-              <a href="" style="" class="">
-                <img
-                  class="image"
-                  decoding="async"
-                  alt=""
-                  style="
+              " class="list_item">
+            <a href="" style="" class="">
+              <img class="image" decoding="async" alt="" style="
                     opacity: 0.4;
                     display: none;
                     width: 100%;
                     object-fit: cover;
-                  "
-                  src="images/bg3.jpg"
-                />
-                <div
-                  class=""
-                  style="
+                  " src="images/bg3.jpg" />
+              <div class="" style="
                     position: absolute;
                     top: 30%;
                     width: 100%;
@@ -952,51 +682,36 @@
                     justify-content: center;
                     align-items: center;
                     gap: 22px;
-                  "
-                >
-                  <i class="fa-solid fa-bed" style="font-size: 25px"></i>
-                  <h5
-                    class=""
-                    style="
+                  ">
+                <i class="fa-solid fa-bed" style="font-size: 25px"></i>
+                <h5 class="" style="
                       font-family: Ubuntu;
                       font-size: 14px;
                       line-height: 14, 5px;
                       font-weight: 300;
                       color: #222;
-                    "
-                  >
-                    Bedroom
-                  </h5>
-                </div>
-              </a>
-            </li>
-            <li
-              style="
+                    ">
+                  Bedroom
+                </h5>
+              </div>
+            </a>
+          </li>
+          <li style="
                 width: 190px;
                 height: 100%;
                 position: relative;
                 transition: all;
                 transition-duration: 5s;
                 transition-delay: 0s;
-              "
-              class="list_item"
-            >
-              <a href="" style="" class="">
-                <img
-                  class="image"
-                  decoding="async"
-                  alt=""
-                  style="
+              " class="list_item">
+            <a href="" style="" class="">
+              <img class="image" decoding="async" alt="" style="
                     opacity: 0.4;
                     display: none;
                     width: 100%;
                     object-fit: cover;
-                  "
-                  src="images/bg4.png"
-                />
-                <div
-                  class=""
-                  style="
+                  " src="images/bg4.png" />
+              <div class="" style="
                     position: absolute;
                     top: 30%;
                     width: 100%;
@@ -1005,51 +720,36 @@
                     justify-content: center;
                     align-items: center;
                     gap: 22px;
-                  "
-                >
-                  <i class="fa-solid fa-bath" style="font-size: 25px"></i>
-                  <h5
-                    class=""
-                    style="
+                  ">
+                <i class="fa-solid fa-bath" style="font-size: 25px"></i>
+                <h5 class="" style="
                       font-family: Ubuntu;
                       font-size: 14px;
                       line-height: 14, 5px;
                       font-weight: 300;
                       color: #222;
-                    "
-                  >
-                    Bathroom
-                  </h5>
-                </div>
-              </a>
-            </li>
-            <li
-              style="
+                    ">
+                  Bathroom
+                </h5>
+              </div>
+            </a>
+          </li>
+          <li style="
                 width: 190px;
                 height: 100%;
                 position: relative;
                 transition: all;
                 transition-duration: 5s;
                 transition-delay: 0s;
-              "
-              class="list_item"
-            >
-              <a href="" style="" class="">
-                <img
-                  class="image"
-                  decoding="async"
-                  alt=""
-                  style="
+              " class="list_item">
+            <a href="" style="" class="">
+              <img class="image" decoding="async" alt="" style="
                     opacity: 0.4;
                     display: none;
                     width: 100%;
                     object-fit: cover;
-                  "
-                  src="images/bg5.jpg"
-                />
-                <div
-                  class=""
-                  style="
+                  " src="images/bg5.jpg" />
+              <div class="" style="
                     position: absolute;
                     top: 30%;
                     width: 100%;
@@ -1058,51 +758,36 @@
                     justify-content: center;
                     align-items: center;
                     gap: 22px;
-                  "
-                >
-                  <i class="fa-solid fa-building" style="font-size: 25px"></i>
-                  <h5
-                    class=""
-                    style="
+                  ">
+                <i class="fa-solid fa-building" style="font-size: 25px"></i>
+                <h5 class="" style="
                       font-family: Ubuntu;
                       font-size: 14px;
                       line-height: 14, 5px;
                       font-weight: 300;
                       color: #222;
-                    "
-                  >
-                    Office
-                  </h5>
-                </div>
-              </a>
-            </li>
-            <li
-              style="
+                    ">
+                  Office
+                </h5>
+              </div>
+            </a>
+          </li>
+          <li style="
                 width: 190px;
                 height: 100%;
                 position: relative;
                 transition: all;
                 transition-duration: 5s;
                 transition-delay: 0s;
-              "
-              class="list_item"
-            >
-              <a href="" style="" class="">
-                <img
-                  class="image"
-                  decoding="async"
-                  alt=""
-                  style="
+              " class="list_item">
+            <a href="" style="" class="">
+              <img class="image" decoding="async" alt="" style="
                     opacity: 0.4;
                     display: none;
                     width: 100%;
                     object-fit: cover;
-                  "
-                  src="images/bg6.jpg"
-                />
-                <div
-                  class=""
-                  style="
+                  " src="images/bg6.jpg" />
+              <div class="" style="
                     position: absolute;
                     top: 30%;
                     width: 100%;
@@ -1111,32 +796,26 @@
                     justify-content: center;
                     align-items: center;
                     gap: 22px;
-                  "
-                >
-                  <i class="fa-solid fa-door-open" style="font-size: 25px"></i>
-                  <h5
-                    class=""
-                    style="
+                  ">
+                <i class="fa-solid fa-door-open" style="font-size: 25px"></i>
+                <h5 class="" style="
                       font-family: Ubuntu;
                       font-size: 14px;
                       line-height: 14, 5px;
                       font-weight: 300;
                       color: #222;
-                    "
-                  >
-                    Exterior
-                  </h5>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+                    ">
+                  Exterior
+                </h5>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-      <!-- Why choose us -->
-      <div
-        class=""
-        style="
+    <!-- Why choose us -->
+    <div class="" style="
           width: 100%;
           display: flex;
           justify-content: center;
@@ -1144,22 +823,18 @@
           padding-bottom: 40px;
           margin: 0;
           line-height: 20px;
-        "
-      >
-        <div
-          style="
+        ">
+      <div style="
             width: 1170px;
             display: flex;
             justify-content: space-between;
             /* gap: 20px; */
             padding-left: 15px;
             padding-right: 15px;
-          "
-        >
-          <div class="" style="width: 70%">
-            <div>
-              <h5
-                style="
+          ">
+        <div class="" style="width: 70%">
+          <div>
+            <h5 style="
                   text-transform: uppercase;
                   font-size: 34px;
                   margin-bottom: 15px;
@@ -1168,12 +843,10 @@
                   font-weight: 700;
                   color: #222;
                   font-family: Montserrat, sans-serif;
-                "
-              >
-                <span style="color: #e5ae49">why</span> choose us
-              </h5>
-              <p
-                style="
+                ">
+              <span style="color: #e5ae49">why</span> choose us
+            </h5>
+            <p style="
                   color: #666;
                   font-size: 14px;
                   font-weight: 300;
@@ -1182,228 +855,171 @@
                   margin-bottom: 10px;
                   padding-right: 225px;
                   font-family: Ubuntu, sans-serif;
-                "
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                blandit nisi a dictum tristique. Nullam urna metus, vestibulum
-                ac sodales et luctus tellus
-              </p>
-            </div>
-            <div class="" style="display: flex; justify-content: space-between">
-              <div class="" style="padding-right: 50px">
-                <div class="" style="opacity: 1; padding-top: 43px">
-                  <i
-                    class="fa-solid fa-pen-ruler"
-                    style="color: #e5ae49; font-size: 32px"
-                  ></i>
-                  <h5
-                    class=""
-                    style="
-                      padding-top: 3px;
-                      margin-bottom: 12px;
-                      font-size: 14px;
-                      font-weight: 400;
-                      font-family: Montserrat, sans-serif;
-                      text-transform: uppercase;
-                      color: #222;
-                    "
-                  >
-                    High Skilled Interior Design
-                  </h5>
-                  <p
-                    style="
-                      width: 30px;
-                      height: 2px;
-                      line-height: 15.4px;
-                      letter-spacing: 2px;
-                      background-color: #e5ae49;
-                    "
-                  ></p>
-                  <p
-                    class=""
-                    style="
-                      line-height: 25px;
-                      letter-spacing: 0.5px;
-                      font-size: 14px;
-                      font-weight: 300;
-                      color: #666;
-                      font-family: Ubuntu, sans-serif;
-                    "
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Morbi non cursus turpis laoreet
-                  </p>
-                </div>
-                <div class="" style="opacity: 1; padding-top: 43px">
-                  <i
-                    class="fa-solid fa-chart-line"
-                    style="color: #e5ae49; font-size: 32px"
-                  ></i>
-                  <h5
-                    style="
-                      padding-top: 3px;
-                      margin-bottom: 12px;
-                      font-weight: 400;
-                      font-size: 14px;
-                      font-family: Montserrat, sans-serif;
-                      text-transform: uppercase;
-                      color: #222;
-                    "
-                  >
-                    Full Pro Service
-                  </h5>
-                  <p
-                    style="
-                      width: 30px;
-                      height: 2px;
-                      line-height: 15.4px;
-                      letter-spacing: 2px;
-                      background-color: #e5ae49;
-                    "
-                  ></p>
-                  <p
-                    class=""
-                    style="
-                      line-height: 25px;
-                      letter-spacing: 0.5px;
-                      font-size: 14px;
-                      font-weight: 300;
-                      color: #666;
-                      font-family: Ubuntu, sans-serif;
-                    "
-                  >
-                    Pellentesque rutrum odio est, eu volutpat ante sodales vel.
-                    Nullam in mauris nec tellus
-                  </p>
-                </div>
-              </div>
-              <div class="" style="padding-right: 20px">
-                <div class="" style="opacity: 1; padding-top: 43px">
-                  <i
-                    class="fa-regular fa-face-smile"
-                    style="color: #e5ae49; font-size: 32px"
-                  ></i>
-                  <h5
-                    style="
-                      padding-top: 3px;
-                      margin-bottom: 12px;
-                      font-weight: 400;
-                      font-size: 14px;
-                      font-family: Montserrat, sans-serif;
-                      text-transform: uppercase;
-                      color: #222;
-                    "
-                  >
-                    Over 500 Sastified Clients
-                  </h5>
-                  <p
-                    style="
-                      width: 30px;
-                      height: 2px;
-                      line-height: 15.4px;
-                      letter-spacing: 2px;
-                      background-color: #e5ae49;
-                    "
-                  ></p>
-                  <p
-                    class=""
-                    style="
-                      line-height: 25px;
-                      letter-spacing: 0.5px;
-                      font-size: 14px;
-                      font-weight: 300;
-                      color: #666;
-                      font-family: Ubuntu, sans-serif;
-                    "
-                  >
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos Quisque
-                  </p>
-                </div>
-                <div class="" style="opacity: 1; padding-top: 43px">
-                  <i
-                    class="fa-regular fa-clock"
-                    style="color: #e5ae49; font-size: 32px"
-                  ></i>
-                  <h5
-                    style="
-                      padding-top: 3px;
-                      padding-bottom: 18px;
-                      margin-bottom: 12px;
-                      font-weight: 400;
-                      font-size: 14px;
-                      font-family: Montserrat, sans-serif;
-                      text-transform: uppercase;
-                      color: #222;
-                    "
-                  >
-                    Support 24/7
-                  </h5>
-                  <p
-                    style="
-                      width: 30px;
-                      height: 2px;
-                      line-height: 15.4px;
-                      letter-spacing: 2px;
-                      background-color: #e5ae49;
-                    "
-                  ></p>
-                  <p
-                    class=""
-                    style="
-                      line-height: 25px;
-                      letter-spacing: 0.5px;
-                      font-size: 14px;
-                      font-weight: 300;
-                      color: #666;
-                      font-family: Ubuntu, sans-serif;
-                    "
-                  >
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque
-                  </p>
-                </div>
-              </div>
-            </div>
+                ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique. Nullam urna metus, vestibulum ac sodales et
+              luctus tellus
+            </p>
           </div>
-          <div class="" style="width: 30%">
-            <img
-              src="images/chooseusbg.png"
-              alt="Why choose us"
-              style="width: 100%; height: 100%; object-fit: cover"
-            />
+          <div class="" style="display: flex; justify-content: space-between">
+            <div class="" style="padding-right: 50px">
+              <div class="" style="opacity: 1; padding-top: 43px">
+                <i class="fa-solid fa-pen-ruler" style="color: #e5ae49; font-size: 32px"></i>
+                <h5 class="" style="
+                      padding-top: 3px;
+                      margin-bottom: 12px;
+                      font-size: 14px;
+                      font-weight: 400;
+                      font-family: Montserrat, sans-serif;
+                      text-transform: uppercase;
+                      color: #222;
+                    ">
+                  High Skilled Interior Design
+                </h5>
+                <p style="
+                      width: 30px;
+                      height: 2px;
+                      line-height: 15.4px;
+                      letter-spacing: 2px;
+                      background-color: #e5ae49;
+                    "></p>
+                <p class="" style="
+                      line-height: 25px;
+                      letter-spacing: 0.5px;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: #666;
+                      font-family: Ubuntu, sans-serif;
+                    ">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non cursus turpis laoreet
+                </p>
+              </div>
+              <div class="" style="opacity: 1; padding-top: 43px">
+                <i class="fa-solid fa-chart-line" style="color: #e5ae49; font-size: 32px"></i>
+                <h5 style="
+                      padding-top: 3px;
+                      margin-bottom: 12px;
+                      font-weight: 400;
+                      font-size: 14px;
+                      font-family: Montserrat, sans-serif;
+                      text-transform: uppercase;
+                      color: #222;
+                    ">
+                  Full Pro Service
+                </h5>
+                <p style="
+                      width: 30px;
+                      height: 2px;
+                      line-height: 15.4px;
+                      letter-spacing: 2px;
+                      background-color: #e5ae49;
+                    "></p>
+                <p class="" style="
+                      line-height: 25px;
+                      letter-spacing: 0.5px;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: #666;
+                      font-family: Ubuntu, sans-serif;
+                    ">
+                  Pellentesque rutrum odio est, eu volutpat ante sodales vel. Nullam in mauris nec tellus
+                </p>
+              </div>
+            </div>
+            <div class="" style="padding-right: 20px">
+              <div class="" style="opacity: 1; padding-top: 43px">
+                <i class="fa-regular fa-face-smile" style="color: #e5ae49; font-size: 32px"></i>
+                <h5 style="
+                      padding-top: 3px;
+                      margin-bottom: 12px;
+                      font-weight: 400;
+                      font-size: 14px;
+                      font-family: Montserrat, sans-serif;
+                      text-transform: uppercase;
+                      color: #222;
+                    ">
+                  Over 500 Sastified Clients
+                </h5>
+                <p style="
+                      width: 30px;
+                      height: 2px;
+                      line-height: 15.4px;
+                      letter-spacing: 2px;
+                      background-color: #e5ae49;
+                    "></p>
+                <p class="" style="
+                      line-height: 25px;
+                      letter-spacing: 0.5px;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: #666;
+                      font-family: Ubuntu, sans-serif;
+                    ">
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos Quisque
+                </p>
+              </div>
+              <div class="" style="opacity: 1; padding-top: 43px">
+                <i class="fa-regular fa-clock" style="color: #e5ae49; font-size: 32px"></i>
+                <h5 style="
+                      padding-top: 3px;
+                      margin-bottom: 12px;
+                      font-weight: 400;
+                      font-size: 14px;
+                      font-family: Montserrat, sans-serif;
+                      text-transform: uppercase;
+                      color: #222;
+                    ">
+                  Support 24/7
+                </h5>
+                <p style="
+                      width: 30px;
+                      height: 2px;
+                      line-height: 15.4px;
+                      letter-spacing: 2px;
+                      background-color: #e5ae49;
+                    "></p>
+                <p class="" style="
+                      line-height: 25px;
+                      letter-spacing: 0.5px;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: #666;
+                      font-family: Ubuntu, sans-serif;
+                    ">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="" style="width: 30%">
+          <img src="images/chooseusbg.png" alt="Why choose us" style="width: 100%; height: 100%; object-fit: cover" />
+        </div>
       </div>
-    </main>
-    <footer></footer>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </main>
+  <footer></footer>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
 </html>
