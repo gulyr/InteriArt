@@ -213,11 +213,21 @@
       }
 
       /*  */
-      .listItem:hover {
+      .listItem1:hover,
+      .listItem2:hover,
+      .listItem3:hover,
+      .listItem4:hover,
+      .listItem5:hover,
+      .listItem6:hover {
         background-color: #f9f9f9;
       }
 
-      .listItem:hover .home_content {
+      .listItem1:hover .home_content,
+      .listItem2:hover .company_content,
+      .listItem3:hover .blogs_content,
+      .listItem4:hover .projects_content,
+      .listItem5:hover .shop_content,
+      .listItem6:hover .page_content {
         display: flex !important;
       }
     </style>
@@ -256,7 +266,7 @@
               "
             >
               <li
-                class="cursor-pointer listItem"
+                class="cursor-pointer listItem1"
                 style="border-top: 2px solid #e5ae49"
               >
                 <a
@@ -603,7 +613,7 @@
                 </ul>
               </li>
 
-              <li class="" style="">
+              <li class="cursor-pointer listItem2">
                 <a
                   class=""
                   href="#"
@@ -615,12 +625,104 @@
                     justify-content: center;
                     align-items: center;
                   "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
-                  >Company<span class=""></span
-                ></a>
+                  >Company</a
+                >
+                <ul
+                  class="company_content"
+                  style="
+                    display: none;
+                    padding: 0;
+                    border-top: 3px solid black;
+                    position: absolute;
+                    top: 85px;
+                    width: 180px;
+                    transition: all 0.5s ease-in-out;
+                    background-color: #fff;
+                  "
+                >
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 1</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 2</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 3</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home One Page</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="" style="">
+
+              <li class="cursor-pointer listItem3">
                 <a
                   class=""
                   href=""
@@ -632,12 +734,104 @@
                     justify-content: center;
                     align-items: center;
                   "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
                   >Blogs<span class=""></span>
                 </a>
+                <ul
+                  class="blogs_content"
+                  style="
+                    display: none;
+                    padding: 0;
+                    border-top: 3px solid black;
+                    position: absolute;
+                    top: 85px;
+                    width: 180px;
+                    transition: all 0.5s ease-in-out;
+                    background-color: #fff;
+                  "
+                >
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 1</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 2</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 3</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home One Page</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="" style="">
+
+              <li class="cursor-pointer listItem4">
                 <a
                   class=""
                   href=""
@@ -649,12 +843,104 @@
                     justify-content: center;
                     align-items: center;
                   "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
                   >Projects<span class=""></span
                 ></a>
+                <ul
+                  class="projects_content"
+                  style="
+                    display: none;
+                    padding: 0;
+                    border-top: 3px solid black;
+                    position: absolute;
+                    top: 85px;
+                    width: 180px;
+                    transition: all 0.5s ease-in-out;
+                    background-color: #fff;
+                  "
+                >
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 1</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 2</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 3</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home One Page</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="" style="">
+
+              <li class="cursor-pointer listItem5">
                 <a
                   class=""
                   href=""
@@ -666,12 +952,339 @@
                     justify-content: center;
                     align-items: center;
                   "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
                   >Shop<span class=""></span
                 ></a>
+                <ul
+                  class="shop_content"
+                  style="
+                    display: none;
+                    padding: 0;
+                    border-top: 3px solid black;
+                    position: absolute;
+                    top: 85px;
+                    left: 15px;
+                    width: 1320px;
+                    transition: all 0.5s ease-in-out;
+                    background-color: #fff;
+                  "
+                >
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 1</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 2</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 3</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home One Page</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Right To Left</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Under Construction</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 7</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 8</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 9</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 10</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 11</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 12</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 13</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                        ></a>
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                        ></a>
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
-              <li class="" style="">
+
+              <li class="cursor-pointer listItem6">
                 <a
                   class=""
                   href="#"
@@ -683,10 +1296,336 @@
                     justify-content: center;
                     align-items: center;
                   "
-                  onmouseover="this.style.backgroundColor='#F9F9F9';"
-                  onmouseout="this.style.backgroundColor='initial';"
                   >Page<span class=""></span
                 ></a>
+                <ul
+                  class="page_content"
+                  style="
+                    display: none;
+                    padding: 0;
+                    border-top: 3px solid black;
+                    position: absolute;
+                    top: 85px;
+                    left: 15px;
+                    width: 1320px;
+                    transition: all 0.5s ease-in-out;
+                    background-color: #fff;
+                  "
+                >
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 1</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 2</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 3</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home One Page</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Right To Left</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Under Construction</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 7</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 8</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 9</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 10</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 11</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 12</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="width: 25%; height: 100%; padding: 0 30px">
+                    <ul style="width: 100%; padding: 0">
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                          >Home Version 13</a
+                        >
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                        ></a>
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          border-bottom: 1px solid #efefef;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                        ></a>
+                      </li>
+                      <li
+                        style="
+                          width: 100%;
+                          height: 65px;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <a
+                          href=""
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(34, 34, 34);
+                          "
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
