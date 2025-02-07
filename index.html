@@ -230,6 +230,78 @@
       .listItem6:hover .page_content {
         display: flex !important;
       }
+
+      /* Burger menu */
+      .burger_menu {
+        cursor: pointer;
+        display: none;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: "Helvetica Neue", sans-serif;
+        text-align: center;
+      }
+
+      .burger {
+        width: 40px;
+        cursor: pointer;
+      }
+
+      .burger span {
+        background-color: rgb(221, 221, 221);
+        border-radius: 4px;
+        display: block;
+        font-size: 14px;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+      .burger span::before,
+      .burger span::after {
+        content: "";
+        width: 100%;
+        background-color: rgb(221, 221, 221);
+        display: block;
+        transition: all 0.5s ease-in-out;
+        border-radius: 4px;
+        height: 4px;
+      }
+      .burger span::before {
+        transform: translateY(-10px);
+      }
+
+      .burger span::after {
+        transform: translateY(10px);
+        margin-top: -4px;
+      }
+
+      .burger.active span {
+        background-color: transparent;
+      }
+
+      .burger.active span::before {
+        transform: rotateZ(45deg) translateY(0);
+      }
+
+      .burger.active span::after {
+        transform: rotateZ(-45deg) translateY(0);
+      }
+      /* Media queries */
+      @media (min-width: 976px) {
+        .burger_menu {
+          cursor: pointer;
+          display: none !important;
+        }
+        .nav_container {
+          display: flex !important;
+        }
+        header {
+          /* padding-left: 40px; */
+        }
+      }
     </style>
   </head>
 
@@ -246,15 +318,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 40px;
+        padding: 0 30px;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
       "
     >
-      <a href="#" class="text-decoration:none">
+      <a href="#" class="text-decoration:none;" style="padding-left: 15px">
         <img src="images/Interiart4.png" alt="Logo" />
       </a>
 
-      <div style="display: flex; height: 100%">
+      <div class="nav_container" style="display: none; height: 100%">
         <nav class="" style="line-height: 20px; color: #333">
           <div class="" style="height: 100%">
             <ul
@@ -1821,6 +1893,216 @@
           >
             0
           </p>
+        </div>
+      </div>
+      <div
+        class="burger_menu"
+        style="
+          width: 90px;
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        "
+      >
+        <div class="content second">
+          <div class="burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="accordion accordion-flush"
+        id="accordionFlushExample"
+        style="
+          position: absolute;
+          top: 85px;
+          width: 88%;
+          padding: 0;
+          border-top: 3px solid #222;
+        "
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Home
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <!-- <div class="accordion-body"></div> -->
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Company
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div
+              class="accordion-body"
+              style="background-color: red; padding: 0"
+            >
+              <ul style="width: 100%; background-color: blue; padding: 0">
+                <li
+                  style="
+                    width: 100%;
+                    height: 40px;
+                    border-bottom: 1px solid rgb(102, 102, 102);
+                    background-color: greenyellow;
+                  "
+                >
+                  <a href="">About us</a>
+                </li>
+                <li>About us v2</li>
+                <li>About us v3</li>
+                <li>Gallery</li>
+                <li>Service</li>
+                <li>Service v2</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Blogs
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              third item's accordion body. Nothing more exciting happening here
+              in terms of content, but just filling up the space to make it
+              look, at least at first glance, a bit more representative of how
+              this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Projects
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              third item's accordion body. Nothing more exciting happening here
+              in terms of content, but just filling up the space to make it
+              look, at least at first glance, a bit more representative of how
+              this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              Shop
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              third item's accordion body. Nothing more exciting happening here
+              in terms of content, but just filling up the space to make it
+              look, at least at first glance, a bit more representative of how
+              this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix"
+              aria-expanded="false"
+              aria-controls="flush-collapseSix"
+            >
+              Page
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              third item's accordion body. Nothing more exciting happening here
+              in terms of content, but just filling up the space to make it
+              look, at least at first glance, a bit more representative of how
+              this would look in a real-world application.
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -7034,6 +7316,12 @@
         });
       });
 
+      // Burger menu
+      const burger_menu = document.querySelector(".burger_menu");
+      const burger = document.querySelector(".burger");
+      burger_menu.addEventListener("click", () => {
+        burger.classList.toggle("active");
+      });
       //
       // const aboutNavLink = document.getElementById("about-page");
       // const workNavLink = document.getElementById("work-page");
