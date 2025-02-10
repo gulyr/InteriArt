@@ -302,6 +302,9 @@
         header {
           position: fixed !important;
         }
+        .swiper_container_2 {
+          height: 170px !important;
+        }
       }
 
       /* Accordion */
@@ -357,6 +360,30 @@
       }
       a {
         color: steelblue;
+      }
+
+      /* Swiper 2 */
+
+      .swiper_container_2 .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+      }
+
+      .swiper_container_2 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper_container_2 .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     </style>
   </head>
@@ -1968,84 +1995,6 @@
         </div>
       </div>
 
-      <!-- <div class="accordion accordion-flush" id="accordionFlushExample" style="position: absolute; top: 85px; width: 88%; padding: 0; border-top: 3px solid #222;">
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Home
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Company
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body" style="background-color: red; padding: 0;">
-              <ul style="width: 100%; background-color: blue; padding: 0;">
-                <li style="width: 100%; height: 40px; border-bottom: 1px solid rgb(102, 102, 102); background-color: #F9F9F9;"><a href="" style="line-height: 24px; padding: 8px 15px; color: rgb(102, 102, 102); width: 100%; height: 100%; border: 1px solid rgb(237, 237, 237); display: inline-block; font-size: 14px; font-weight: 300; font-family: Ubuntu, sans-serif;">About us</a></li>
-                <li>About us v2</li>
-                <li>About us v3</li>
-                <li>Gallery</li>
-                <li>Service</li>
-                <li>Service v2</li>
-                <li>Contact</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Blogs
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-              Projects
-            </button>
-          </h2>
-          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-              Shop
-            </button>
-          </h2>
-          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-              Page
-            </button>
-          </h2>
-          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-
-      </div> -->
       <div
         class="accordion_container"
         style="
@@ -2615,13 +2564,15 @@
       <div
         style="
           width: 100%;
-          height: 170px;
+          /* height: 170px; */
           border-bottom: 2px solid #efefef;
           display: flex;
+          flex-direction: column;
           justify-content: center;
+          align-items: center;
         "
       >
-        <nav style="width: 85%; height: 100%">
+        <nav style="width: 85%; height: 300px">
           <ul
             style="
               padding-left: 0;
@@ -2970,6 +2921,87 @@
             </li>
           </ul>
         </nav>
+
+        <div
+          class="swiper_container_2"
+          style="width: 100%; height: 270px; border-bottom: 2px solid #efefef"
+        >
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  style="
+                    width: 480px;
+                    height: 100%;
+                    position: relative;
+                    transition: all;
+                    transition-duration: 5s;
+                    transition-delay: 0s;
+                  "
+                  class="list_item"
+                >
+                  <a
+                    href=""
+                    style="display: inline-block; width: 300px; height: 100%"
+                  >
+                    <img
+                      class="image"
+                      decoding="async"
+                      alt=""
+                      style="
+                        opacity: 0.4;
+                        display: none;
+                        width: 100%;
+                        object-fit: cover;
+                      "
+                      src="images/bg6.jpg"
+                    />
+                    <div
+                      class=""
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 22px;
+                      "
+                    >
+                      <i
+                        class="fa-solid fa-door-open"
+                        style="font-size: 25px; color: rgba(0, 0, 0, 0.7)"
+                      ></i>
+                      <h5
+                        class=""
+                        style="
+                          font-family: Ubuntu;
+                          font-size: 14px;
+                          line-height: 14, 5px;
+                          font-weight: 300;
+                          color: #222;
+                        "
+                      >
+                        Exterior
+                      </h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Why choose us -->
@@ -7307,11 +7339,10 @@
         } else {
           accordion_container.style.display = "none";
         }
-        // accordion_container.classList.add("open");
       });
 
-      // Accordion
-
+      // Swiper 2
+      var swiper = new Swiper(".mySwiper2", {});
       //
       // const aboutNavLink = document.getElementById("about-page");
       // const workNavLink = document.getElementById("work-page");
