@@ -332,7 +332,7 @@
         margin: 2em;
       }
 
-      input {
+      div.c input {
         position: absolute;
         left: 0;
         top: 0;
@@ -411,6 +411,30 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+
+      /* Footer responsive */
+      @media (max-width: 976px) {
+        footer {
+          height: auto !important;
+        }
+        .footer_top {
+          flex-direction: column !important;
+          height: auto !important;
+        }
+        .footer_bottom {
+          flex-direction: column !important;
+          height: auto !important;
+        }
+        .width_full {
+          width: 100% !important;
+        }
+        .recent_post li {
+          justify-content: flex-start !important;
+        }
+        .newsletter {
+          width: 262.5px;
+        }
       }
     </style>
   </head>
@@ -6746,7 +6770,7 @@
     </main>
     <footer style="width: 100%; height: 97vh">
       <div
-        class=""
+        class="footer_top"
         style="
           display: flex;
           justify-content: center;
@@ -6762,8 +6786,13 @@
         "
       >
         <div
-          class=""
-          style="width: 292.5px; padding: 0px 15px; margin-bottom: 22px"
+          class="width_full"
+          style="
+            width: 292.5px;
+            height: 100%;
+            padding: 0px 15px;
+            margin-bottom: 22px;
+          "
         >
           <h3
             class=""
@@ -6780,7 +6809,7 @@
           >
             Contact info
           </h3>
-          <div class="">
+          <div class="" style="">
             <p
               class=""
               style="
@@ -6887,8 +6916,13 @@
           </div>
         </div>
         <div
-          class=""
-          style="width: 292.5px; padding: 0px 15px; margin-bottom: 22px"
+          class="recent_post width_full"
+          style="
+            width: 292.5px;
+            height: 100%;
+            padding: 0px 15px;
+            margin-bottom: 22px;
+          "
         >
           <h3
             class=""
@@ -7011,8 +7045,13 @@
           </ul>
         </div>
         <div
-          class=""
-          style="width: 292.5px; padding: 0px 15px; margin-bottom: 22px"
+          class="width_full"
+          style="
+            width: 292.5px;
+            height: 100%;
+            padding: 0px 15px;
+            margin-bottom: 22px;
+          "
         >
           <h3
             class=""
@@ -7029,148 +7068,144 @@
           >
             Get In touch
           </h3>
-          <div class="">
-            <form
-              action=""
-              method="post"
+          <form
+            action=""
+            method="post"
+            novalidate="novalidate"
+            data-status="init"
+            style="width: 100%; height: 100%"
+          >
+            <input
+              style="
+                outline: none;
+                color: rgb(155, 155, 155);
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: 13px;
+                line-height: 45px;
+                height: 45px;
+                width: 100%;
+                text-align: start;
+                padding-bottom: 8px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #a8a9a9;
+              "
+              size="40"
+              maxlength="400"
               class=""
-              novalidate="novalidate"
-              data-status="init"
-            >
-              <div class="">
-                <p style="margin-bottom: 10px">
-                  <span class="" data-name="">
-                    <input
-                      style="
-                        outline: none;
-                        color: rgb(155, 155, 155);
-                        display: inline-block;
-                        font-size: 14px;
-                        font-weight: 300;
-                        margin-bottom: 13px;
-                        line-height: 45px;
-                        height: 45px;
-                        width: 100%;
-                        text-align: start;
-                        padding-bottom: 8px;
-                        background-color: transparent;
-                        border: none;
-                        border-bottom: 1px solid #a8a9a9;
-                      "
-                      size="40"
-                      maxlength="400"
-                      class=""
-                      aria-required="true"
-                      aria-invalid="false"
-                      placeholder="Your name..."
-                      value=""
-                      type="text"
-                      name=""
-                  /></span>
-                </p>
-                <p style="margin-bottom: 10px">
-                  <span class="" data-name="">
-                    <input
-                      style="
-                        outline: none;
-                        color: rgb(155, 155, 155);
-                        display: inline-block;
-                        font-size: 14px;
-                        font-weight: 300;
-                        margin-bottom: 13px;
-                        line-height: 45px;
-                        height: 45px;
-                        width: 100%;
-                        text-align: start;
-                        padding-bottom: 8px;
-                        background-color: transparent;
-                        border: none;
-                        border-bottom: 1px solid #a8a9a9;
-                      "
-                      size="40"
-                      maxlength="400"
-                      class=""
-                      aria-required="true"
-                      aria-invalid="false"
-                      placeholder="Your email..."
-                      value=""
-                      type="email"
-                      name=""
-                  /></span>
-                </p>
-                <p style="margin-bottom: 10px">
-                  <span class="" data-name="">
-                    <textarea
-                      style="
-                        outline: none;
-                        color: rgb(155, 155, 155);
-                        display: inline-block;
-                        font-size: 14px;
-                        font-weight: 300;
-                        margin-bottom: 20px;
-                        line-height: 25px;
-                        height: 75px;
-                        width: 100%;
-                        line-height: 25px;
-                        letter-spacing: normal;
-                        overflow-wrap: break-word;
-                        text-align: start;
-                        padding: 2px;
-                        background-color: transparent;
-                        border: none;
-                        border-bottom: 1px solid #a8a9a9;
-                      "
-                      cols="40"
-                      rows="10"
-                      maxlength="2000"
-                      class=""
-                      aria-invalid="false"
-                      placeholder="Message..."
-                      name=""
-                    ></textarea>
-                  </span>
-                </p>
-                <p
+              aria-required="true"
+              aria-invalid="false"
+              placeholder="Your name..."
+              value=""
+              type="text"
+              name=""
+            />
+            <p style="margin-bottom: 10px">
+              <input
+                style="
+                  outline: none;
+                  color: rgb(155, 155, 155);
+                  display: inline-block;
+                  font-size: 14px;
+                  font-weight: 300;
+                  margin-bottom: 13px;
+                  line-height: 45px;
+                  height: 45px;
+                  width: 100%;
+                  text-align: start;
+                  padding-bottom: 8px;
+                  background-color: transparent;
+                  border: none;
+                  border-bottom: 1px solid #a8a9a9;
+                "
+                size="40"
+                maxlength="400"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Your email..."
+                value=""
+                type="email"
+                name=""
+              />
+            </p>
+            <p style="margin-bottom: 10px">
+              <span class="">
+                <textarea
                   style="
+                    outline: none;
                     color: rgb(155, 155, 155);
+                    display: inline-block;
                     font-size: 14px;
                     font-weight: 300;
-                    letter-spacing: 0.5px;
+                    margin-bottom: 20px;
                     line-height: 25px;
-                    margin-bottom: 10px;
+                    height: 75px;
+                    width: 100%;
+                    line-height: 25px;
+                    letter-spacing: normal;
+                    overflow-wrap: break-word;
+                    text-align: start;
+                    padding: 2px;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #a8a9a9;
                   "
-                >
-                  <input
-                    class=""
-                    type="submit"
-                    value="SUBMIT"
-                    style="
-                      font-family: Montserrat, sans-serif;
-                      text-align: center;
-                      background-color: transparent;
-                      width: 80px;
-                      text-transform: uppercase;
-                      padding: 10px 22px 3px 0px;
-                      margin-bottom: 13px;
-                      line-height: 25px;
-                      letter-spacing: 1px;
-                      font-weight: 400;
-                      font-weight: 13px;
-                      display: inline-block;
-                      color: rgb(229, 174, 73);
-                      border: none;
-                      border-bottom: 1px solid rgb(229, 174, 73);
-                      text-align: start;
-                    "
-                  />
-                </p>
-              </div>
-            </form>
-          </div>
+                  cols="40"
+                  rows="10"
+                  maxlength="2000"
+                  class=""
+                  aria-invalid="false"
+                  placeholder="Message..."
+                  name=""
+                ></textarea>
+              </span>
+            </p>
+            <p
+              style="
+                color: rgb(155, 155, 155);
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 0.5px;
+                line-height: 25px;
+                margin-bottom: 10px;
+              "
+            >
+              <input
+                class=""
+                type="submit"
+                value="SUBMIT"
+                style="
+                  font-family: Montserrat, sans-serif;
+                  text-align: center;
+                  background-color: transparent;
+                  width: 80px;
+                  text-transform: uppercase;
+                  padding: 10px 22px 3px 0px;
+                  margin-bottom: 13px;
+                  line-height: 25px;
+                  letter-spacing: 1px;
+                  font-weight: 400;
+                  font-weight: 13px;
+                  display: inline-block;
+                  color: rgb(229, 174, 73);
+                  border: none;
+                  border-bottom: 1px solid rgb(229, 174, 73);
+                  text-align: start;
+                "
+              />
+            </p>
+          </form>
         </div>
         <div
-          class=""
-          style="width: 292.5px; padding: 0px 15px; margin-bottom: 22px"
+          class="newsletter width_full"
+          style="
+            width: 292.5px;
+            height: 100%;
+            padding: 0px 15px;
+            margin-bottom: 22px;
+          "
         >
           <h3
             class=""
@@ -7205,7 +7240,7 @@
             method="post"
             action=""
             style="
-              width: 262.5px;
+              width: 100%;
               max-width: 500px;
               line-height: 23px;
               font-size: 14px;
@@ -7216,8 +7251,6 @@
               color: rgb(134, 134, 134);
             "
           >
-            <input type="hidden" name="" value="" />
-            <input type="hidden" name="" value="" />
             <div
               class=""
               style="
@@ -7230,6 +7263,7 @@
               <input
                 style="
                   cursor: text;
+                  width: 100%;
                   color: rgb(134, 134, 134);
                   font-size: 14px;
                   font-family: Ubuntu, sans-serif;
@@ -7263,7 +7297,9 @@
           </form>
         </div>
       </div>
+
       <div
+        class="footer_bottom"
         style="
           width: 100%;
           height: 15vh;
