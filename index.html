@@ -7555,12 +7555,20 @@
     </footer>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
+        // slidesPerView: 4,
         spaceBetween: 50,
         loop: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          976: {
+            slidesPerView: 4,
+          },
         },
       });
 
