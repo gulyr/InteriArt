@@ -42,7 +42,10 @@
         margin: 0;
         box-sizing: border-box;
       }
-
+      body,
+      html {
+        overflow-x: hidden;
+      }
       a {
         text-decoration: none;
         font-size: 13px;
@@ -326,6 +329,9 @@
         .contact_us {
           padding: 0 340px !important;
         }
+        .recent_news {
+          padding: 0 320px !important;
+        }
       }
 
       /* Accordion */
@@ -442,11 +448,23 @@
           flex-direction: column;
           justify-content: center;
         }
+        .recent_news_bottom {
+          flex-direction: column;
+          align-items: center !important;
+        }
+        .recent_news_card {
+          width: 100% !important;
+          padding: 0 25px !important;
+        }
+        .recent_news_card img {
+          width: 100% !important;
+          object-fit: cover !important;
+        }
       }
     </style>
   </head>
 
-  <body>
+  <body style="background-color: yellow">
     <header
       class=""
       style="
@@ -2091,7 +2109,7 @@
         </div>
       </div>
     </header>
-    <main style="width: 100%">
+    <main style="width: 100%; margin: 0">
       <div
         id="carouselExampleCaptions"
         class="carousel slide carousel-fade"
@@ -2627,6 +2645,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background-color: red;
         "
       >
         <!-- <nav style="width: 85%; height: 170px">
@@ -3269,6 +3288,7 @@
           padding-bottom: 40px;
           margin: 0;
           line-height: 20px;
+          background-color: red;
         "
       >
         <div
@@ -3512,6 +3532,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background-color: red;
         "
       >
         <div style="margin-bottom: 35px">
@@ -6115,8 +6136,11 @@
 
       <!-- Recent News -->
 
-      <div class="" style="width: 100%">
-        <div style="padding-top: 89px; padding-bottom: 55px">
+      <div class="" style="width: 100%; background-color: red">
+        <div
+          class="recent_news_top"
+          style="padding-top: 89px; padding-bottom: 55px"
+        >
           <h5
             style="
               text-align: center;
@@ -6133,13 +6157,17 @@
             <span style="color: #e5ae49">recent</span> news
           </h5>
           <p
+            class="recent_news"
             style="
-              padding: 0 320px;
+              padding: 0 20%;
               color: #666;
               font-family: Ubuntu, sans-serif;
               font-size: 14px;
               font-weight: 300;
               text-align: center;
+              line-height: 24px;
+              letter-spacing: 0.5px;
+              margin-block-end: 10px;
               margin-bottom: 10px;
             "
           >
@@ -6149,11 +6177,11 @@
           </p>
         </div>
         <div
-          class=""
+          class="recent_news_bottom"
           style="display: flex; justify-content: center; padding-bottom: 85px"
         >
           <div
-            class=""
+            class="recent_news_card"
             style="
               opacity: 1;
               width: 380px;
@@ -6272,7 +6300,7 @@
           </div>
 
           <div
-            class=""
+            class="recent_news_card"
             style="
               opacity: 1;
               width: 380px;
@@ -6391,7 +6419,7 @@
           </div>
 
           <div
-            class=""
+            class="recent_news_card"
             style="
               opacity: 1;
               width: 380px;
@@ -6520,6 +6548,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          background-color: red;
         "
       >
         <div
@@ -6744,7 +6773,7 @@
       </div>
 
       <!-- Swiper -->
-      <div class="swiper_container">
+      <div class="swiper_container" style="background-color: red">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -6777,7 +6806,7 @@
         </div>
       </div>
     </main>
-    <footer style="width: 100%; height: 97vh">
+    <footer style="width: 100%; height: 97vh; background-color: red">
       <div
         class="footer_top"
         style="
