@@ -460,6 +460,18 @@
           width: 100% !important;
           object-fit: cover !important;
         }
+        .why_choose_us_container {
+          flex-direction: column !important;
+        }
+        .why_choose_us_content {
+          /* padding: 0; */
+          /* width: 100% !important;
+          background-color: blue !important; */
+          padding: 0 !important;
+        }
+        .why_choose_us_container_top {
+          width: 100% !important;
+        }
       }
     </style>
   </head>
@@ -3279,7 +3291,7 @@
 
       <!-- Why choose us -->
       <div
-        class=""
+        class="why_choose_us"
         style="
           width: 100%;
           display: flex;
@@ -3288,10 +3300,11 @@
           padding-bottom: 40px;
           margin: 0;
           line-height: 20px;
-          background-color: red;
+          /* background-color: red; */
         "
       >
         <div
+          class="why_choose_us_container"
           style="
             width: 1170px;
             display: flex;
@@ -3301,8 +3314,8 @@
             padding-right: 15px;
           "
         >
-          <div class="" style="width: 70%">
-            <div>
+          <div class="why_choose_us_container_top" style="width: 70%">
+            <div class="" style="">
               <h5
                 style="
                   text-transform: uppercase;
@@ -3318,6 +3331,7 @@
                 <span style="color: #e5ae49">why</span> choose us
               </h5>
               <p
+                class="why_choose_us_content"
                 style="
                   color: #666;
                   font-size: 14px;
@@ -3327,6 +3341,7 @@
                   margin-bottom: 10px;
                   padding-right: 225px;
                   font-family: Ubuntu, sans-serif;
+                  /* background-color: green; */
                 "
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -3510,7 +3525,7 @@
               </div>
             </div>
           </div>
-          <div class="" style="width: 30%">
+          <div class="why_choose_us_container_bottom" style="width: 30%">
             <img
               src="images/chooseusbg.png"
               alt="Why choose us"
