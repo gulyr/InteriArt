@@ -73,6 +73,7 @@
       .tabs {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
       }
 
@@ -136,15 +137,15 @@
       }
 
       @media (max-width: 45em) {
-        .tabs .tab,
-        .tabs label {
-          order: initial;
+        .tabs {
+          /* height: 1500px !important; */
         }
-
+        .tabs .tab {
+          /* height: 1000px !important; */
+          margin-top: 35px !important;
+        }
         .tabs label {
-          width: 100%;
-          margin-right: 0;
-          margin-top: 0.2rem;
+          margin-bottom: 0 !important;
         }
       }
 
@@ -464,9 +465,6 @@
           flex-direction: column !important;
         }
         .why_choose_us_content {
-          /* padding: 0; */
-          /* width: 100% !important;
-          background-color: blue !important; */
           padding: 0 !important;
         }
         .why_choose_us_container_top {
@@ -483,6 +481,21 @@
         }
         .why_choose_us_container_bottom img {
           width: 72% !important;
+        }
+        .featured_works {
+          padding: 0 !important;
+        }
+
+        .tab_content_1,
+        .tab_content_2,
+        .tab_content_4,
+        .tab_content_5,
+        .tab_content_6,
+        .tab_content_7 {
+          width: 50% !important;
+        }
+        .tab_content_3 {
+          width: 100% !important;
         }
       }
     </style>
@@ -3558,19 +3571,21 @@
       <!-- Featured Works -->
 
       <div
+        class="featured_works"
         style="
           width: 100%;
+          /* height: 400vh; */
           background-color: #f9f9f9;
           padding-top: 70px;
           padding-bottom: 45px;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
-          background-color: red;
+          /* align-items: center; */
+          background-color: cyan;
         "
       >
-        <div style="margin-bottom: 35px">
+        <div style="margin-bottom: 35px; padding-top: 70px">
           <h5
             style="
               text-align: center;
@@ -3588,13 +3603,14 @@
           </h5>
           <p
             style="
-              padding: 0 320px;
+              padding: 0 15%;
               color: #666;
               font-family: Ubuntu, sans-serif;
               font-size: 14px;
               font-weight: 300;
               text-align: center;
               margin-bottom: 10px;
+              background-color: greenyellow;
             "
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -3602,7 +3618,7 @@
             ad minim veniam
           </p>
         </div>
-        <div class="tabs">
+        <div class="tabs" style="">
           <input type="radio" name="tabs" id="tabone" checked="checked" />
           <label for="tabone">show all</label>
           <div
@@ -3621,7 +3637,7 @@
             "
           >
             <div
-              class="tab_content"
+              class="tab_content tab_content_1"
               style="
                 width: 25%;
                 height: 50%;
@@ -3731,7 +3747,7 @@
             </div>
 
             <div
-              class="tab_content"
+              class="tab_content tab_content_2"
               style="
                 width: 25%;
                 height: 50%;
@@ -3826,7 +3842,7 @@
             </div>
 
             <div
-              class="tab_content"
+              class="tab_content tab_content_3"
               style="
                 width: 50%;
                 height: 50%;
@@ -3921,7 +3937,7 @@
             </div>
 
             <div
-              class="tab_content"
+              class="tab_content tab_content_4"
               style="
                 width: 25%;
                 height: 50%;
@@ -4030,7 +4046,7 @@
             </div>
 
             <div
-              class="tab_content"
+              class="tab_content tab_content_5"
               style="
                 width: 25%;
                 height: 50%;
@@ -4139,7 +4155,7 @@
             </div>
 
             <div
-              class="tab_content"
+              class="tab_content tab_content_6"
               style="
                 width: 25%;
                 height: 50%;
@@ -4234,7 +4250,7 @@
             </div>
 
             <div
-              class="tab_content"
+              class="tab_content tab_content_7"
               style="
                 width: 25%;
                 height: 50%;
