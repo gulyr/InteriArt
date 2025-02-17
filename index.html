@@ -326,6 +326,7 @@
 
       li.c {
         position: relative;
+        border-bottom: 1px solid rgb(237, 237, 237);
       }
 
       li.c input {
@@ -339,11 +340,11 @@
       }
 
       li.c label {
-        background: steelblue;
-        color: white;
+        color: rgb(34, 34, 34);
         position: relative;
         padding: 8px 15px;
-        font-family: "Ubuntu", sans-serif;
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -518,7 +519,7 @@
     </style>
   </head>
 
-  <body style="background-color: yellow">
+  <body>
     <header
       style="
         position: absolute;
@@ -2458,7 +2459,14 @@
       >
         <li class="c">
           <input type="checkbox" id="faq-1" />
-          <label for="faq-1">Home</label>
+          <label
+            for="faq-1"
+            style="
+              color: rgb(229, 174, 73);
+              border-top: 2px solid rgb(229, 174, 73);
+            "
+            >Home</label
+          >
           <ul class="p">
             <li>
               <a href="">Home version 1</a>
@@ -8342,6 +8350,16 @@
             slidesPerView: 6,
           },
         },
+      });
+      //
+      const mediaQuery = window.matchMedia("(min-width: 976px)");
+      // accordion_container
+      mediaQuery.addEventListener("change", (event) => {
+        if (event.matches) {
+          // location.reload(); // Səhifəni yenilə
+          accordion_container.style.display = "none";
+          burger.classList.remove("active");
+        }
       });
     </script>
     <script
