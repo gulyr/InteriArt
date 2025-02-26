@@ -1,0 +1,58 @@
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 45px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
+}
+header #logo {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .nav_container {
+  display: none;
+  width: 55%;
+  height: 100%;
+}
+header .nav_container nav {
+  width: 90%;
+  line-height: 20px;
+  color: #333;
+}
+header .nav_container nav div {
+  width: 100%;
+  height: 100%;
+}
+header .nav_container nav div .list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+}
+header .nav_container nav div .list .listItem1 {
+  cursor: pointer;
+  border-top: 2px solid #e5ae49;
+  transition: all 0.2s linear 0s;
+}
+header .nav_container nav div .list .listItem1 .home_title {
+  color: #e5ae49;
+  width: 90px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
