@@ -1,106 +1,149 @@
 .w-10 {
   width: 10%;
 }
+
 .w-18 {
   width: 18px;
 }
+
 .w-20 {
   width: 20%;
 }
+
 .w-25 {
   width: 25%;
 }
+
+.w-90 {
+  width: 90px;
+}
+
 .w-100px {
   width: 100px;
 }
+
+.w-180px {
+  width: 180px;
+}
+
 .w-300px {
   width: 300px;
 }
+
 .w-1320px {
   width: 1320px;
 }
+
 .h-18 {
   height: 18px;
 }
+
 .h-65 {
   height: 65px;
 }
+
 .p-se {
   padding: 15px 20px;
 }
+
 .px-30 {
   padding: 0 30px;
 }
+
 .pe-10 {
   padding-right: 10px;
 }
+
 .pr-30 {
   padding-right: 30px;
 }
+
 .border-top {
   border-top: 2px solid #000;
 }
+
 .border-top-2 {
   border-top: 3px solid #222;
 }
+
 .border-bottom {
   border-bottom: 1px solid #efefef;
 }
+
 .border-left {
   border-left: 1px solid #efefef;
 }
+
 .transition-1 {
   transition: all 0.2s linear 0s;
 }
+
 .transition-2 {
   transition: all 0.5s ease-in-out;
 }
+
 .color-1 {
   color: rgb(34, 34, 34);
 }
+
 .color-2 {
   color: rgb(102, 102, 102);
 }
+
 .color-3 {
   color: #c2c2c2;
 }
+
 .font-Montserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .font-Ubuntu {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
+
 .fs-12 {
   font-size: 12px;
 }
+
 .fs-13 {
   font-size: 13px;
 }
+
 .border-top {
   border-top: 3px solid black;
 }
+
 .top-85 {
   top: 85px;
 }
+
 .left-15 {
   left: 15px;
 }
+
 .transform-1 {
   transform: rotate(90deg);
 }
+
 .no-outline {
   outline: none;
 }
+
 .lh-20 {
   line-height: 20px;
 }
+
 .bg-1 {
   background-color: #e5ae49;
 }
+
 .rounded-20 {
   border-radius: 20px;
 }
+
 /* Header */
+
 header {
   position: absolute;
   top: 0;
@@ -114,26 +157,31 @@ header {
   padding-left: 45px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
 }
+
 header #logo {
   width: 45%;
   height: 100%;
   display: flex;
   align-items: center;
 }
+
 header .nav_container {
   display: none;
   width: 55%;
   height: 100%;
 }
+
 header .nav_container nav {
   width: 90%;
   line-height: 20px;
   color: #333;
 }
+
 header .nav_container nav div {
   width: 100%;
   height: 100%;
 }
+
 header .nav_container nav div .list {
   width: 100%;
   display: flex;
@@ -142,11 +190,13 @@ header .nav_container nav div .list {
   transition: all 0.3s ease-in-out;
   padding: 0;
 }
+
 header .nav_container nav div .list .listItem1 {
   cursor: pointer;
   border-top: 2px solid #e5ae49;
   transition: all 0.2s linear 0s;
 }
+
 header .nav_container nav div .list .listItem1 .home_title {
   color: #e5ae49;
   width: 90px;
@@ -155,9 +205,10 @@ header .nav_container nav div .list .listItem1 .home_title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
 }
+
 header .nav_container nav div .list .listItem1 .home_content {
   display: none;
   padding: 0;
