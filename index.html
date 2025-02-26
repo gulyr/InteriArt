@@ -35,7 +35,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
@@ -567,68 +567,17 @@
   </head>
 
   <body>
-    <header
-      style="
-        position: absolute;
-        top: 0;
-        z-index: 1000;
-        background-color: #fff;
-        width: 100%;
-        height: 85px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 45px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
-      "
-    >
-      <a
-        href="#"
-        class="text-decoration:none;"
-        style="width: 45%; height: 100%; display: flex; align-items: center"
-      >
+    <header>
+      <a href="#" id="logo">
         <img src="images/Interiart4.png" alt="Logo" />
       </a>
 
-      <div
-        class="nav_container"
-        style="display: none; width: 55%; height: 100%"
-      >
-        <nav style="width: 90%; line-height: 20px; color: #333">
-          <div style="width: 100%; height: 100%">
-            <ul
-              style="
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                height: 100%;
-                transition: all 0.3s ease-in-out;
-                padding: 0;
-              "
-            >
-              <li
-                class="cursor-pointer listItem1"
-                style="
-                  border-top: 2px solid #e5ae49;
-                  transition: all 0.2s linear 0s;
-                "
-              >
-                <a
-                  class="home_title"
-                  href=""
-                  style="
-                    color: #e5ae49;
-                    width: 90px;
-                    height: 100%;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 13px;
-                  "
-                  >Home</a
-                >
+      <div class="nav_container">
+        <nav>
+          <div>
+            <ul class="list">
+              <li class="listItem1">
+                <a class="home_title" href="">Home</a>
                 <ul
                   class="home_content"
                   style="
