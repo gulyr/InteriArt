@@ -13,8 +13,10 @@
 .w-25 {
   width: 25%;
 }
-
-.w-90 {
+.w-80px {
+  width: 80px;
+}
+.w-90px {
   width: 90px;
 }
 
@@ -41,7 +43,9 @@
 .h-65 {
   height: 65px;
 }
-
+.h-80px {
+  height: 80px;
+}
 .p-se {
   padding: 15px 20px;
 }
@@ -93,13 +97,15 @@
 .color-3 {
   color: #c2c2c2;
 }
-
+.color-4 {
+  color: rgb(229, 174, 73);
+}
 .font-Montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .font-Ubuntu {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .fs-12 {
@@ -133,15 +139,18 @@
 .lh-20 {
   line-height: 20px;
 }
-
+.lh-24 {
+  line-height: 24px;
+}
 .bg-1 {
   background-color: #e5ae49;
 }
-
 .rounded-20 {
   border-radius: 20px;
 }
-
+.mb-50 {
+  margin-bottom: 50px;
+}
 /* Header */
 
 header {
@@ -205,7 +214,7 @@ header .nav_container nav div .list .listItem1 .home_title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
 }
 
