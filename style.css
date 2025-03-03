@@ -456,14 +456,14 @@ li {
 
 .burger {
   width: 40px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .burger span {
   background-color: rgb(221, 221, 221);
   border-radius: 4px;
-  display: block;
-  font-size: 14px;
+  /* display: block; */
+  /* font-size: 14px; */
   transition: background-color 0.5s ease-in-out;
 }
 
