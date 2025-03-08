@@ -1,3 +1,119 @@
+/* Text colour */
+
+.text-gray-1 {
+  color: #868686;
+}
+
+.text-gray-2 {
+  color: #9b9b9b;
+}
+
+.text-orange {
+  color: #e5ae49;
+}
+
+.text-blue-1 {
+  color: #337ab7;
+}
+
+/* Background colour */
+
+.bg-white-1 {
+  background-color: #f4f4f4;
+}
+
+/* Border colour */
+
+/* Font size */
+
+.font-size-13px {
+  font-size: 13px;
+}
+
+.font-size-14px {
+  font-size: 14px;
+}
+
+.font-size-18px {
+  font-size: 18px;
+}
+
+/* Font weight */
+
+.fw-300 {
+  font-weight: 300;
+}
+
+/* Font family */
+
+.font-Montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-Ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Width */
+
+.w-32px {
+  width: 32px;
+}
+
+/* Height */
+
+.h-32px {
+  height: 32px;
+}
+
+/* Padding */
+
+/* Margin */
+
+/* Background */
+
+/* Line-height */
+
+.line-height-16px {
+  line-height: 16px;
+}
+
+.line-height-23px {
+  line-height: 23px;
+}
+
+.line-height-25px {
+  line-height: 25px;
+}
+
+.line-height-27px {
+  line-height: 27px;
+}
+
+.line-height-45px {
+  line-height: 45px;
+}
+
+/* Letter-spacing */
+
+.letter-spacing-0 {
+  letter-spacing: 0.5px;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+/* Header */
+
+/* Main */
+
+/* Footer */
+
 .w-10 {
   width: 10%;
 }
@@ -108,14 +224,6 @@
 
 .color-4 {
   color: rgb(229, 174, 73);
-}
-
-.font-Montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.font-Ubuntu {
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .fs-12 {
