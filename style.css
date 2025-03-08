@@ -1,4 +1,4 @@
-/* Text colour */
+/* Text color */
 
 .text-gray-1 {
   color: #868686;
@@ -16,13 +16,33 @@
   color: #337ab7;
 }
 
-/* Background colour */
+/* Background color */
 
 .bg-white-1 {
   background-color: #f4f4f4;
 }
 
-/* Border colour */
+.bg-blue-1 {
+  background-color: #3c5899;
+}
+
+.bg-blue-2 {
+  background-color: #2caae1;
+}
+
+.bg-blue-3 {
+  background-color: #359dd4;
+}
+
+.bg-red-1 {
+  background-color: #c8302a;
+}
+
+.bg-pink-1 {
+  background-color: #eb4d88;
+}
+
+/* Border color */
 
 /* Font size */
 
@@ -71,6 +91,14 @@
 /* Margin */
 
 /* Background */
+
+.bg-1 {
+  background-image: url('images/background_process-1.jpg');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 0px;
+  background-size: cover;
+}
 
 /* Line-height */
 
